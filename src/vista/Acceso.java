@@ -116,7 +116,9 @@ public class Acceso extends javax.swing.JFrame {
         
         if (usuario.equals("alfonso")&&password.equals("unitec123")) { //condicional para ingresar al sistema
           JOptionPane.showMessageDialog(null, "Bienvenido al Sistema de Gestion " + usuario); // Abre una ventana de Bienvenida
-            
+          MantenimientoCRUD ventanaMenu = new MantenimientoCRUD();
+          ventanaMenu.setVisible(true);
+          this.hide();
            
         } else {
             JOptionPane.showMessageDialog(null, "\tError\nVerifica tus datos."); // abre una ventana con el texto en comillas
